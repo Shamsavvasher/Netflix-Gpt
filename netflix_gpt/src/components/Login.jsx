@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className="">
+      <div className="flex object-contain">
         <img
           className=" h-screen w-full absolute "
           src="https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/web/IN-en-20241008-TRIFECTA-perspective_b28b640f-cee0-426b-ac3a-7c000d3b41b7_large.jpg"
@@ -17,10 +17,10 @@ const Login = () => {
         />
         {/* <div className="w-[100%] min-h-screen relative -top-[733px]  bg-black opacity-60"></div> */}
         <div className=" w-[450px] h-[500px] bg-black relative rounded-md top-36 left-[500px]  px-16 bg-opacity-80">
-          <h1 className="font-semibold text-3xl mt-10 mr-[210px] py-8 text-white z-auto">
+          <h1 className="font-semibold text-3xl   mr-[210px] py-8 text-white z-auto">
             {isSignInForm ? "Sign In" : "SignUp"}
           </h1>
-          <div className=" w-[314px] h-[350px]  flex justify-center">
+          <div className=" w-[314px] h-[350px]  -mt-[10px] flex justify-center">
             <form action="">
               {!isSignInForm && (
                 <input
@@ -39,7 +39,7 @@ const Login = () => {
                 placeholder="Password"
                 className="py-3 px-4 text-white mt-4 w-full border-2 rounded solid bg-opacity-50 bg-gray-600"
               />
-              <button className="py-2  bg-red-700 mt-8 w-full rounded solid">
+              <button className="py-2 text-white font-semibold  bg-[#ff0000] hover:bg-[#C11119] mt-8 w-full rounded solid">
                 {isSignInForm ? "Sign In" : "Sign Up"}
               </button>
               <p className="text-center mt-2 text-white font-semibold">OR</p>
